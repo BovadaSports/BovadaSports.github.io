@@ -1,0 +1,858 @@
+/*
+Theme Name: Elements of SEO
+Theme URL: http://www.alibiproductions.com/html/elements-of-seo.html
+Description: Elements of SEO is a simple, 3-column Widget-ready theme created for Wordpress.
+Author: Drew Stauffer
+Author URI: http://www.alibiproductions.com
+Version: 1.2
+Tags: white, green, gray, three columns, custom headers, widgets, gravatar, fixed width, easy customization, valid XHTML, valid CSS
+	
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,html,label,table,tr,td {margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img,a img,:link img,:visited img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}
+q:before,q:after {content:'';}
+
+b {
+	font-weight:bold;
+	color:#989898;
+	font-style: italic;
+}
+
+
+body {
+	background: #FFFFFF;
+	color: #323232;
+	text-align:center;
+	/*font:11px/18px Verdana, Arial, Helvetica, sans-serif; */
+	font:14px/18px Verdana, Arial, Helvetica, sans-serif; 
+	margin: 0px auto 0px;
+	padding: 0px;
+	}
+	
+#menutop {
+padding-left:15px;
+background-color:#464646;
+}
+#menutop a{
+color:#fff;
+padding-right:15px;
+}
+#menusub {
+background-color:#464646;
+font-size:85%;
+}
+#menusub a{
+color:#000;
+padding-right:15px;
+}
+
+#menuone{position:relative;display:block;height:21px;font-size:11px;font-weight:bold;font-family:Arial,Verdana,Helvitica,sans-serif;background-color:#464646;}
+#menuone ul{margin:0;padding:0;list-style-type:none;width:auto;}
+#menuone ul li{display:block;float:left;margin:0 1px 0 0;}
+#menuone ul li a{display:block;float:left;color:#fff;text-decoration:none;padding:3px 20px 0 20px;height:18px;}
+#menuone ul li a:hover,#menuone ul li a.current{background-color:#505050;}
+
+
+#menutwo{position:relative;display:block;height:21px;font-size:11px;font-weight:bold;background:transparent url(images/bgOFF.gif) repeat-x top left;font-family:Arial,Verdana,Helvitica,sans-serif;border-bottom:1px solid #d9d9d9;}
+#menutwo ul{margin:0;padding:0;list-style-type:none;width:auto;}
+#menutwo ul li{display:block;float:left;margin:0 1px 0 0;}
+#menutwo ul li a{display:block;float:left;color:#525252;text-decoration:none;padding:3px 20px 0 20px;height:18px;}
+#menutwo ul li a:hover,#menutwo ul li a.current{color:#525252;background:transparent url(images/bgON.gif) repeat-x top left;}
+
+	
+#wrap {
+	background: #FFFFFF;
+	/*width: 960px;*/
+	text-align:left;
+	margin: 0px auto 0px;
+	padding: 0px;
+	}
+
+#stripe {
+	/*background: #FFFFFF url("images/top.gif") repeat-x;*/
+	height: 9px;
+}
+	
+/************************************************
+*	Hyperlinks									*
+************************************************/
+
+a:link,a:visited	{ color:#886353; text-decoration:none; outline:none;}
+a:hover,a:active	{ color:#4C666A; text-decoration:underline; outline:none;}
+	
+/************************************************
+*	Navbar  									*
+************************************************/
+#nav {
+	text-align: right;
+	margin: 0px auto 0px;
+	padding: 0px;
+}
+
+#nav ul {
+	margin: 15px 0px 0px 0px;
+	padding: 0px;
+	}
+
+#nav li {
+	display: inline;
+	font-weight:bold;
+	padding:0 5px 0 10px;
+	}
+
+#nav a:link, #nav a:visited	{ color:#444; text-decoration:none; }
+#nav a:hover, #nav a:active	{ color:#444; text-decoration:underline; }
+
+/************************************************
+*	Masthead 					     		    * 
+************************************************/
+
+#masthead { /*width: 960px;*/margin-top:10px; /*height: 100px; background: url('images/logo.gif') no-repeat;*/ /* uncomment the height and background declarations here if you intend to use a graphic in the header instead of the h1 */ }
+
+	/* #masthead a { display: block; width: 770px; height: 100px; } */ /* uncomment this line if you use a graphic in the header - make sure the height of your header graphic is equal to the height declared in this line of code! */
+
+#masthead h1 { font-family: Georgia, "Times New Roman", Times, serif; font-size: 25px; font-weight: normal; padding: 0em 0 0.2em 0; }
+
+
+
+
+
+
+
+#masthead h3 { font-family: Georgia, "Times New Roman", Times, serif; margin: 0 0 0.75em 0; font-weight: normal; font-size: 14px; text-transform: none; color: #888;  }
+
+#masthead a:link, #masthead a:visited	{ color:#414F59; text-decoration:none; }
+#masthead a:hover, #masthead a:active	{ color:#444; text-decoration:underline;}
+
+
+#banner { background: url("images/banner.jpg"); height:134px;clear:both;background-size:cover; }
+
+#banner1 { background: url("images/banner1.jpg") no-repeat; height:134px; }
+
+#banner2 { background: url("images/banner2.jpg") no-repeat; height:134px; }
+
+
+/************************************************
+*	Content 					     		    * 
+************************************************/
+
+#content {
+	/*width: 960px;*/
+	margin: 0px auto 0px;
+	padding: 0px;
+	text-align:left;
+	}
+
+#content p{
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	line-height: 20px;
+	}
+	
+#content h1 {
+	color: ##444444;
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	margin: 20px 0px 5px 0px;
+	/padding: 20px 0px 0px 0px;/
+	text-transform: uppercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+        border-bottom: 1px dashed #4C666A;
+	}
+	
+#content h1 a  {
+	color: #14181A;
+	text-decoration: none;
+	}
+
+#content h1 a:hover {
+	color: #525252;
+	text-decoration: none;
+	}
+	
+#content p img{
+	float: left;
+	border: none;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	padding-top: 7px;
+	}
+	
+#content h2 {
+	color: #444444;
+	font-size: 11px;
+	font-weight:bold;
+	/*padding: 0px 0px 5px 0px;*/
+	margin: 20px 0px 5px 0px;
+	border-bottom: 1px dashed #4C666A;
+	text-transform: uppercase;
+	}
+	
+#content h3 {
+	color: #444444;
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 20px 0px 5px 0px;
+	padding: 10px 0px 10px 0px;
+	}
+	
+#content img.wp-smiley {
+	float: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	}
+
+#content img.wp-wink {
+	float: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#contentleft {
+	float: left;
+	/*width: 455px;*/
+	padding: 20px 20px 20px 0px;
+	}
+	
+#contentleft ol{
+	margin: 0px 0px 0px 20px;
+	padding: 0px 0px 10px 0px;
+	}
+	
+#contentleft ol li{
+	margin: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 0px;
+	}
+	
+#contentleft ul{
+	margin: 0px 0px 0px 20px;
+	padding: 0px 0px 10px 0px;
+	}
+	
+#contentleft ul li{
+	background:transparent url("images/ul-bullet.gif") 0px 3px no-repeat; /* 0px = horizontal position for left, 6px = vertical position from top */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 18px;
+	}
+	
+#contentleft .single {
+	margin: 42px 0px 15px 0px;
+	padding: 20px 0px 0px 0px;
+	}
+	
+blockquote{
+	margin: 0px 25px 10px 25px;
+	padding: 0px 25px 0px 10px;
+	background: #333333;
+	border-top: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	}
+	
+#content blockquote p{
+	color:#fff;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 0px 0px;
+	}
+
+.date {
+	color:#A97965;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.bt-links {
+	background: #EFEFEF;
+	border: 1px solid #DDDCDC;
+	margin:10px 0px 10px 0px;
+	padding:10px 0px 10px 15px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/************************************************
+*	Left Sidebar 					     	    * 
+************************************************/
+
+#l_sidebar {
+	float: left;
+	/*width: 285px;*/
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 20px 19px;
+	border-left: 1px solid #E2DDDE;
+	font:11px/18px Verdana, Arial, Helvetica, sans-serif; 
+	}
+	
+#l_sidebar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+
+#l_sidebar ul li {
+	background:transparent url("images/bullet.gif") 0px 11px no-repeat; /* 0px = horizontal position for left, 6px = vertical position from top */
+	display: block;
+	padding: 4px 0px 4px 10px;
+	margin: 0px;
+	}
+
+#l_sidebar a:link, #l_sidebar a:visited	{ color:#444; text-decoration:none; outline:none; }
+#l_sidebar a:hover, #l_sidebar a:active	{ color:#444; text-decoration:underline; outline:none; }
+	
+
+#l_sidebar p{
+	padding: 3px 0px 0px 0px;
+	margin: 0px;
+	line-height: 20px;
+	}
+
+
+#l_sidebar li {list-style: none; }	
+/************************************************
+*	Right Sidebar 					     	    * 
+************************************************/
+	
+#r_sidebar {
+	float: right;
+	width: 200px;
+	margin: 40px 0px 0px 0px;
+	padding: 0px 19px 20px 19px;
+	border-left: 1px solid #E2DDDE;
+	border-right: 1px solid #E2DDDE;
+	font:11px/18px Verdana, Arial, Helvetica, sans-serif; 
+	}
+
+#r_sidebar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+
+#r_sidebar ul li {
+	background:transparent url("images/bullet.gif") 0px 11px no-repeat; /* 0px = horizontal position for left, 6px = vertical position from top */
+	display: block;
+	padding: 4px 0px 4px 10px;
+	margin: 0px;
+	}
+
+
+#feed {
+	background:  url("images/rss.gif") 183px 0px no-repeat; /* 0px = horizontal position for left, 6px = vertical position from top */
+	padding: 4px 0px 4px 10px;
+}
+
+#r_sidebar a:link, #r_sidebar a:visited	{ color:#444; text-decoration:none; outline:none; }
+#r_sidebar a:hover, #r_sidebar a:active	{ color:#444; text-decoration:underline; outline:none; }
+	
+	
+#r_sidebar p{
+	padding: 3px 0px 0px 0px;
+	margin: 0px;
+	line-height: 20px;
+	}
+
+#r_sidebar li {list-style: none; }
+
+
+/************************************************
+
+
+
+*	Latest Videos  									*
+************************************************/
+
+#latestvideos{
+        float:left;
+        /*width:300px;*/
+        padding-left:5px;
+        padding-top:20px;	
+        }
+
+#videoadvertise {
+       float:left;
+       width:300px;
+       padding-top:20px;
+}
+
+#subscribeform {
+        float:right;
+        width:160px;
+        margin-top:40px;
+}
+
+#rightbannerbet365 {
+        float:right;
+        width:160px;
+        margin-top:10px;
+        text-align:center;
+
+}
+
+#rightbannerbwin {
+        float:right;
+        width:150px;
+        text-align:right;
+        margin-top:10px;
+
+}
+
+
+/************************************************
+
+
+*	Footer  									*
+************************************************/
+
+#footer {
+	background:  url("images/foot.gif") repeat-x;
+	/*width: 960px;*/
+	text-align: center;
+	/*margin: 0px auto 0px;
+	position: relative;*/
+	line-height: 17px;
+	font:11px/18px Verdana, Arial, Helvetica, sans-serif; 
+	}
+	
+#footer p {
+	color: #AAB3B4;
+	margin:10px 0px 10px 0px;
+	padding-top: 13px;
+	}
+
+#footer_li {
+        list-style-type: none; width:960px; margin:auto; padding:0;
+}
+
+#footer_li li{margin: 2px;
+	      padding: 5px;
+	      text-align: center;
+	      float: left;
+
+}
+
+
+#footer a:link, #footer a:visited { color:#AAB3B4; }
+#footer a:hover, #footer a:active { color:#AAB3B4; }
+
+#contact {
+    background:  url("images/contact.jpg");
+    width:259px;
+    height:25px;
+    margin: 0px auto 10px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+
+/************************************************
+*	Search Form									*
+************************************************/
+
+#searchdiv {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#searchform {
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	}
+	
+#s {
+	color: #323232;
+	font-size: 11px;
+	padding: 4px;
+	margin: 4px 0px 0px 0px;
+	border: 1px solid #323232;
+	}
+	
+#sbutt {
+	background: #878787;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	padding: 1px;
+	margin: 0px 0px 0px 5px;
+	border: 1px solid #333333;
+	cursor:pointer;
+	}
+
+
+#searchbox{
+background:transparent url(images/searchbox.html);
+float:right;
+width:183px;
+}
+
+#headerSearch {
+background:transparent none repeat scroll 0 0;
+float:right;
+right:6px;
+top:42px;
+width:200px;
+}
+
+#headerSearch, #searchbox,{
+border:0 none;
+height:19px;
+margin:0;
+padding:0;
+}
+#searchbox input {
+background-color:#FFFFFF;
+border:0 none;
+font-size:10px !important;
+height:13px;
+left:7px;
+margin:0;
+padding:0;
+position:relative;
+top:3px;
+width:172px;
+}
+
+	
+/************************************************
+*	Comments									*
+************************************************/
+	
+
+#commentblock {
+
+	background: #EFEFEF;
+	color: #000000;
+	padding: 20px 20px 10px 20px;
+	margin: 0px 0px 0px 0px;
+	border-top: 2px solid #4C666A;
+	border-bottom: 1px solid #4C666A;
+	}
+	
+#commentblock ol{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+	}
+	
+.commentdate {
+	font-size: 12px;
+	padding-left: 0px;
+	}
+	
+#commentlist li p{
+	margin-bottom: 8px;
+	line-height: 20px;
+	padding: 0px;
+
+	}
+
+
+.commentname {
+	color: #333333;
+	margin: 0px;
+	padding: 5px 5px 5px 0px;
+	}
+
+.commentinfo{
+	clear: both;
+	}
+
+.commenttext {
+	margin: 25px 20px 20px 0px;
+	padding: 10px 10px 0px 10px;
+	background: #F9F9F9;
+	border:1px solid #DEDEDE;
+	font-style:normal;
+	}
+
+
+.commenttext-admin {
+	clear: both;
+	margin: 3px 0px 10px 0px;
+	padding: 20px 10px 5px 10px;
+	background: #FFFFFF url("images/comment.gif") no-repeat top;
+	}
+
+#commentsformheader{
+	padding-left: 0px;
+	}
+
+#commentsform{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#commentsform form{
+	text-align: left;
+	margin: 0px;
+	}
+
+#commentsform p{
+	margin: 0px;
+	}
+
+
+#commentsform form textarea{
+	width: 99%;
+	}
+	
+p.comments_link  img{
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+
+img.avatar {float:right; margin-right:20px; border: 1px solid #4C666A;}
+
+.awaiting { color: #886353; }
+
+.auth-name { font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; color:#000;}
+
+.auth-time { font-size: 10px; color:#616161; font-style:italic;}
+
+#comments, #respond { text-transform:uppercase; font-size: 14px; font-weight:normal;}
+
+
+/************************************************
+*	Wordpress Suggestions						*
+************************************************/
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}
+.social_butt{
+        float:right;
+}
+.twitter-share-button{width:80px !important;}
+.addthis_toolbox a{max-width:80px !important;}
+.addthis_button_google_plusone{width:60px !important;}
+.addthis_button_facebook_like iframe{width:75px !important;}
+
+
+/*********added for responsive*************/
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/* The Grid ---------------------- */
+.row { width: 1000px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row.collapse .column, .row.collapse .columns { padding: 0; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row .row.collapse { margin: 0; }
+
+.column, .columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
+.column.centered, .columns.centered { float: none; margin: 0 auto; }
+
+[class*="column"] + [class*="column"]:last-child { float: right; }
+
+[class*="column"] + [class*="column"].end { float: left; }
+
+.row .one { width: 8.333%; }
+
+.row .two { width: 16.667%; }
+
+.row .three { width: 25%; }
+
+.row .four { width: 33.333%; }
+
+.row .five { width: 41.667%; }
+
+.row .six { width: 50%; }
+
+.row .seven { width: 58.333%; }
+
+.row .eight { width: 66.667%; }
+
+.row .nine { width: 75%; }
+
+.row .ten { width: 83.333%; }
+
+.row .eleven { width: 91.667%; }
+
+.row .twelve { width: 100%; }
+
+.row .offset-by-one { margin-left: 8.333%; }
+
+.row .offset-by-two { margin-left: 16.667%; }
+
+.row .offset-by-three { margin-left: 25%; }
+
+.row .offset-by-four { margin-left: 33.333%; }
+
+.row .offset-by-five { margin-left: 41.667%; }
+
+.row .offset-by-six { margin-left: 50%; }
+
+.row .offset-by-seven { margin-left: 58.333%; }
+
+.row .offset-by-eight { margin-left: 66.667%; }
+
+.row .offset-by-nine { margin-left: 75%; }
+
+.row .offset-by-ten { margin-left: 83.333%; }
+
+.push-two { left: 16.667%; }
+
+.pull-two { right: 16.667%; }
+
+.push-three { left: 25%; }
+
+.pull-three { right: 25%; }
+
+.push-four { left: 33.333%; }
+
+.pull-four { right: 33.333%; }
+
+.push-five { left: 41.667%; }
+
+.pull-five { right: 41.667%; }
+
+.push-six { left: 50%; }
+
+.pull-six { right: 50%; }
+
+.push-seven { left: 58.333%; }
+
+.pull-seven { right: 58.333%; }
+
+.push-eight { left: 66.667%; }
+
+.pull-eight { right: 66.667%; }
+
+.push-nine { left: 75%; }
+
+.pull-nine { right: 75%; }
+
+.push-ten { left: 83.333%; }
+
+.pull-ten { right: 83.333%; }
+
+img, object, embed { max-width: 100%; height: auto; padding: 5px 5px 5px 5px;}
+
+img { -ms-interpolation-mode: bicubic; }
+
+#map_canvas img, .map_canvas img { max-width: none!important; }
+
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1; }
+.row:before, .row:after { content: ""; display: table; }
+.row:after { clear: both; }
+
+/* Mobile Grid and Overrides ---------------------- */
+@media only screen and (max-width: 767px) { body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; width: 100%; min-width: 0; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+  .row { width: auto; min-width: 0; margin-left: 0; margin-right: 0; }
+  .column, .columns { width: auto !important; float: none; }
+  .column:last-child, .columns:last-child { float: none; }
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  .column:before, .columns:before, .column:after, .columns:after { content: ""; display: table; }
+  .column:after, .columns:after { clear: both; }
+  .no-left-margin, .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten { margin-left: 0 !important; }
+  .left-auto, .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten { left: auto; }
+  .right-auto, .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten { right: auto; }
+  /* Mobile 4-column Grid */
+  .row .mobile-one { width: 25% !important; float: left; padding: 0 15px; }
+  .row .mobile-one:last-child { float: right; }
+  .row.collapse .mobile-one { padding: 0; }
+  .row .mobile-two { width: 50% !important; float: left; padding: 0 15px; }
+  .row .mobile-two:last-child { float: right; }
+  .row.collapse .mobile-two { padding: 0; }
+  .row .mobile-three { width: 75% !important; float: left; padding: 0 15px; }
+  .row .mobile-three:last-child { float: right; }
+  .row.collapse .mobile-three { padding: 0; }
+  .row .mobile-four { width: 100% !important; float: left; padding: 0 15px; }
+  .row .mobile-four:last-child { float: right; }
+  .row.collapse .mobile-four { padding: 0; }
+  .push-one-mobile { left: 25%; }
+  .pull-one-mobile { right: 25%; }
+  .push-two-mobile { left: 50%; }
+  .pull-two-mobile { right: 50%; }
+  .push-three-mobile { left: 75%; }
+  .pull-three-mobile { right: 75%; }
+  .content{padding:0 2%;}}
+/* Block Grids ---------------------- */
+/* These are 2-up, 3-up, 4-up and 5-up ULs, suited
+for repeating blocks of content. Add 'mobile' to
+them to switch them just like the layout grid
+(one item per line) on phones
+
+For IE7/8 compatibility block-grid items need to be
+the same height. You can optionally uncomment the
+lines below to support arbitrary height, but know
+that IE7/8 do not support :nth-child.
+-------------------------------------------------- */
+.block-grid { display: block; overflow: hidden; padding: 0; }
+.block-grid > li { display: block; height: auto; float: left; }
+
+.block-grid.two-up { margin: 0 -15px; }
+
+.block-grid.two-up > li { width: 50%; padding: 0 15px 15px; }
+
+/*  .block-grid.two-up>li:nth-child(2n+1) {clear: left;} */
+.block-grid.three-up { margin: 0 -12px; }
+
+.block-grid.three-up > li { width: 33.33%; padding: 0 12px 12px; }
+
+/*  .block-grid.three-up>li:nth-child(3n+1) {clear: left;} */
+.block-grid.four-up { margin: 0 -10px; }
+
+.block-grid.four-up > li { width: 25%; padding: 0 10px 10px; }
+
+/*  .block-grid.four-up>li:nth-child(4n+1) {clear: left;} */
+.block-grid.five-up { margin: 0 -8px; }
+
+.block-grid.five-up > li { width: 20%; padding: 0 8px 8px; }
+
+/*  .block-grid.five-up>li:nth-child(5n+1) {clear: left;} */
+/* Mobile Block Grids */
+@media only screen and (max-width: 767px) { .block-grid.mobile { margin-left: 0; }
+  .block-grid.mobile > li { float: none; width: 100%; margin-left: 0; } }
